@@ -2,7 +2,6 @@ import argparse
 import os
 
 import copy
-import importlib
 
 from riscvmodel.isa import Instruction
 from riscvmodel.code import decode, MachineDecodeError
@@ -97,12 +96,10 @@ class RegisterFile(object):
         with open(self.outputFile, perm) as file:
             file.writelines(op)
 
-
-
 class State(object):
 
     def __init__(self):
-        self.IF = {"nop": False, "PC": 0}
+        self.IF = {"nop": False, "PC": 0, "instruction_count":0}
         self.ID = {"nop": False, "Instr": 0}
         self.EX = {"nop": False, "Read_data1": 0, "Read_data2": 0, "Imm": 0, "Rs": 0, "Rt": 0, "Wrt_reg_addr": 0, "is_I_type": False, "rd_mem": 0, 
                    "wrt_mem": 0, "opcode": 0, "wrt_enable": 0}
@@ -369,16 +366,12 @@ class ADDERJTYPE:
         self.registers.write_rf(self.rd, self.state.IF.PC + 4)
         return self.state.IF.PC + self.imm
 
-4
 def get_instruction_class(mnemonic):
     try:
         if mnemonic == "lb":
             mnemonic = "lw"
         
-        print(mnemonic.upper())
-        # cls = getattr(__import__("module"),mnemonic.upper())
         cls = eval(mnemonic.upper())
-        print(cls)
         return cls
     except AttributeError as e:
         raise Exception("Invalid Instruction")
@@ -402,6 +395,20 @@ class Core(object):
         self.ext_imem: InsMem = imem
         self.ext_dmem: DataMem = dmem
 
+    def calculate_performance_metrics(self):
+        cpi = float(self.cycle) / self.state.IF['instruction_count']
+        ipc = 1 / cpi
+
+        result_format = f"{self.stages} Core Performance Metrics-----------------------------\n" \
+                        f"Number of cycles taken: {self.cycle}\n" \
+                        f"Cycles per instruction: {cpi}\n" \
+                        f"Instructions per cycle: {ipc}\n"
+
+        write_mode = "w" if self.stages == "Single Stage" else "a"
+
+        print(self.ioDir[:-3] + "PerformanceMetrics_Result.txt")
+        with open(self.ioDir[:-3] + "PerformanceMetrics_Result.txt", write_mode) as file:
+            file.write(result_format)
 
 class SingleStageCore(Core):
     def __init__(self, ioDir: str, imem: InsMem, dmem: DataMem):
@@ -412,7 +419,8 @@ class SingleStageCore(Core):
     def step(self):
         # IF
         instruction_bytes = self.ext_imem.read_instr(self.state.IF['PC'])
-        print(instruction_bytes)
+        self.nextState.IF['instruction_count'] = self.nextState.IF['instruction_count'] + 1
+
         if instruction_bytes == "1" * 32:
             self.nextState.IF['nop'] = True
         else:
@@ -492,3 +500,5 @@ if __name__ == "__main__":
     # dump SS and FS data mem.
     dmem_ss.output_data_mem()
     dmem_fs.output_data_mem()
+
+    ssCore.calculate_performance_metrics()
