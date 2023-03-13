@@ -66,13 +66,10 @@ class DataMem(object):
         self.DMem = left + zeroes + [write_data[i: i + 8] for i in range(0, 32, 8)] + right
 
     def output_data_mem(self):
-        if self.id == 'SS':
-            res_path = self.ioDir + "/" + self.id + "_DMEMResult.txt"
-        else:
-            res_path = self.ioDir + "/" + self.id + "_DMEMResult.txt"
+        res_path = self.ioDir + "/" + self.id + "_DMEMResult.txt"
         with open(res_path, "w") as rp:
             rp.writelines([str(data) + "\n" for data in self.DMem])
-
+            rp.writelines([ '0'*8 + '\n' for _ in range(MemSize - len(self.DMem))])
 
 class RegisterFile(object):
     def __init__(self, ioDir):
@@ -344,14 +341,14 @@ class ADDERBTYPE:
     def get_pc(self, *args, **kwargs):
         if self.instruction.mnemonic == 'beq':
             if self.registers.read_rf(self.rs1) == self.registers.read_rf(self.rs2):
-                return self.state.IF.PC + self.imm
+                return self.state.IF['PC'] + self.imm
             else:
-                return self.state.IF.PC + 4
+                return self.state.IF['PC'] + 4
         else:
             if self.registers.read_rf(self.rs1) != self.registers.read_rf(self.rs2):
-                return self.state.IF.PC + self.imm
+                return self.state.IF['PC'] + self.imm
             else:
-                return self.state.IF.PC + 4
+                return self.state.IF['PC'] + 4
 
 
 class ADDERJTYPE:
@@ -363,8 +360,8 @@ class ADDERJTYPE:
         self.imm = instruction.imm.value
 
     def get_pc(self, *args, **kwargs):
-        self.registers.write_rf(self.rd, self.state.IF.PC + 4)
-        return self.state.IF.PC + self.imm
+        self.registers.write_rf(self.rd, self.state.IF['PC'] + 4)
+        return self.state.IF['PC'] + self.imm
 
 def get_instruction_class(mnemonic):
     try:
