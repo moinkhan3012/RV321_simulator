@@ -1,4 +1,10 @@
---------------- Core Performance Metrics ---------------
+C:\Users\moink\Downloads\CSA\RV321_simulator/
+Single Stage Core Performance Metrics------------------------------
 Number of cycles taken: 12
-Cycles per instruction: 1.0
-Instructions per cycle: 1.0
+Cycles per instruction: 1
+Instructions per cycle: 1
+C:\Users\moink\Downloads\CSA\RV321_simulator/
+Five Stage Core Performance Metrics------------------------------
+Number of cycles taken: 20
+Cycles per instruction: 1.818182
+Instructions per cycle: 0.55

@@ -1,0 +1,690 @@
+----------------------------------------------------------------------
+State after executing cycle: 0
+IF.nop: 0
+IF.PC: 4
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000010000000000000100000011
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 0
+EX.Rd: 0
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 0
+EX.instruction_ob: None
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 0
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 0
+MEM.instruction_ob: None
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 0
+WB.Wrt_reg_addr: 0
+WB.wrt_enable: 0
+WB.instruction_ob: None
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 1
+IF.nop: 0
+IF.PC: 8
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 4
+EX.Rd: 2
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 1
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.LW object at 0x000001A5944C3C10>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 0
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 0
+MEM.instruction_ob: None
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 0
+WB.Wrt_reg_addr: 0
+WB.wrt_enable: 0
+WB.instruction_ob: None
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 2
+IF.nop: 0
+IF.PC: 8
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 0
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A5944C3B20>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A5944C3B50>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 1
+WB.Wrt_data: 0
+WB.Wrt_reg_addr: 0
+WB.wrt_enable: 0
+WB.instruction_ob: None
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 3
+IF.nop: 0
+IF.PC: 12
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000010000000000000100000011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A5944C3DC0>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A5944C3B50>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A59450B310>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 4
+IF.nop: 0
+IF.PC: 16
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 4
+EX.Rd: 2
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 1
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.LW object at 0x000001A5944C3BB0>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A59450B400>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A59450B310>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 5
+IF.nop: 0
+IF.PC: 16
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A5944C3DC0>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A59450BBE0>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A59450BEB0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 6
+IF.nop: 0
+IF.PC: 20
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000010000000000000100000011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A5944C3BB0>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A59450BBE0>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A5945339D0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 7
+IF.nop: 0
+IF.PC: 24
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 4
+EX.Rd: 2
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 1
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.LW object at 0x000001A594533B80>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A594533EB0>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A5945339D0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 8
+IF.nop: 0
+IF.PC: 24
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594537C40>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A59453D130>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A59453D6D0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 9
+IF.nop: 0
+IF.PC: 28
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000010000000000000100000011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594537310>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A59453D130>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A59450BAC0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 10
+IF.nop: 0
+IF.PC: 32
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 4
+EX.Rd: 2
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 1
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.LW object at 0x000001A5944C3B80>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A594537C40>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A59450BAC0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 11
+IF.nop: 0
+IF.PC: 32
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A59450B640>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A594541D00>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A59454A7C0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 12
+IF.nop: 0
+IF.PC: 36
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000010000000000000100000011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594541970>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A594541D00>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A594550100>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 13
+IF.nop: 0
+IF.PC: 40
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 4
+EX.Rd: 2
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 1
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.LW object at 0x000001A5945502B0>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A5945504F0>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A594550100>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 14
+IF.nop: 0
+IF.PC: 40
+IF.halt: 0
+ID.nop: 0
+ID.Instr: 00000000001000001000000110110011
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594554B20>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A594559EB0>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A594560FA0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 15
+IF.nop: 1
+IF.PC: 40
+IF.halt: 0
+ID.nop: 1
+ID.Instr: 11111111111111111111111111111111
+ID.halt: 0
+EX.nop: 0
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594568A60>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 0
+MEM.Wrt_reg_addr: 2
+MEM.rd_mem: 1
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.LW object at 0x000001A594559EB0>
+MEM.halt: 0
+MEM.data_address: 4
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A594568DF0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 16
+IF.nop: 1
+IF.PC: 40
+IF.halt: 0
+ID.nop: 1
+ID.Instr: 11111111111111111111111111111111
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594568A60>
+EX.halt: 0
+MEM.nop: 0
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A59456F4C0>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 2
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.LW object at 0x000001A594568DF0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 17
+IF.nop: 1
+IF.PC: 40
+IF.halt: 0
+ID.nop: 1
+ID.Instr: 11111111111111111111111111111111
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594568A60>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A59456F4C0>
+MEM.halt: 0
+WB.nop: 0
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A594578AF0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 18
+IF.nop: 1
+IF.PC: 40
+IF.halt: 0
+ID.nop: 1
+ID.Instr: 11111111111111111111111111111111
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594568A60>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A59456F4C0>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A594578AF0>
+WB.halt: 0
+----------------------------------------------------------------------
+State after executing cycle: 19
+IF.nop: 1
+IF.PC: 40
+IF.halt: 0
+ID.nop: 1
+ID.Instr: 11111111111111111111111111111111
+ID.halt: 0
+EX.nop: 1
+EX.Read_data1: 0
+EX.Read_data2: 949973630
+EX.Rd: 3
+EX.Store_data: 0
+EX.Wrt_reg_addr: 0
+EX.rd_mem: 0
+EX.wrt_mem: 0
+EX.wrt_enable: 1
+EX.instruction_ob: <__main__.ADD object at 0x000001A594568A60>
+EX.halt: 0
+MEM.nop: 1
+MEM.ALUresult: 0
+MEM.Store_data: 949973630
+MEM.Wrt_reg_addr: 3
+MEM.rd_mem: 0
+MEM.wrt_mem: 0
+MEM.wrt_enable: 1
+MEM.instruction_ob: <__main__.ADD object at 0x000001A59456F4C0>
+MEM.halt: 0
+WB.nop: 1
+WB.Wrt_data: 949973630
+WB.Wrt_reg_addr: 3
+WB.wrt_enable: 1
+WB.instruction_ob: <__main__.ADD object at 0x000001A594578AF0>
+WB.halt: 0
