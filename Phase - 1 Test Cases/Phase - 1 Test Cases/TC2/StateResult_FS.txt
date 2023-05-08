@@ -1,0 +1,801 @@
+
+----------------------------------------------------------------------
+State after executing cycle: 0
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000000000000000000010000011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: None
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: None
+MEM.data_address: 0
+MEM.store_data: 0
+MEM.write_register_addr: 0
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: False
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: None
+WB.store_data: 0
+WB.write_register_addr: 0
+WB.write_back_enable: False
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 1
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.LW object at 0x0000020F445B2340>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 1
+EX.read_data_mem: True
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: None
+MEM.data_address: 0
+MEM.store_data: 0
+MEM.write_register_addr: 0
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: False
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: None
+WB.store_data: 0
+WB.write_register_addr: 0
+WB.write_back_enable: False
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 2
+
+IF.nop: False
+IF.PC: 12
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.ADDI object at 0x0000020F445B2310>
+EX.operand1: 0
+EX.operand2: 4
+EX.store_data: 0
+EX.destination_register: 2
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.LW object at 0x0000020F445B2340>
+MEM.data_address: 0
+MEM.store_data: 0
+MEM.write_register_addr: 1
+MEM.read_data_mem: True
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: None
+WB.store_data: 0
+WB.write_register_addr: 0
+WB.write_back_enable: False
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 3
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: True
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446AECA0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F445B2310>
+MEM.data_address: 0
+MEM.store_data: 4
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.LW object at 0x0000020F446F8130>
+WB.store_data: 0
+WB.write_register_addr: 1
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 4
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446AECA0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F445B2310>
+MEM.data_address: 0
+MEM.store_data: 4
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F446FC970>
+WB.store_data: 4
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 5
+
+IF.nop: False
+IF.PC: 12
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.ADDI object at 0x0000020F446FCC40>
+EX.operand1: 4
+EX.operand2: 4
+EX.store_data: 0
+EX.destination_register: 2
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F445B2310>
+MEM.data_address: 0
+MEM.store_data: 4
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F446FC970>
+WB.store_data: 4
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 6
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: True
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F28B0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446FCC40>
+MEM.data_address: 0
+MEM.store_data: 8
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F446FC970>
+WB.store_data: 4
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 7
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F28B0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446FCC40>
+MEM.data_address: 0
+MEM.store_data: 8
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F4470F310>
+WB.store_data: 8
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 8
+
+IF.nop: False
+IF.PC: 12
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.ADDI object at 0x0000020F446F85E0>
+EX.operand1: 8
+EX.operand2: 4
+EX.store_data: 0
+EX.destination_register: 2
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446FCC40>
+MEM.data_address: 0
+MEM.store_data: 8
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F4470F310>
+WB.store_data: 8
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 9
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: True
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F44701490>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446F85E0>
+MEM.data_address: 0
+MEM.store_data: 12
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F4470F310>
+WB.store_data: 8
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 10
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F44701490>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446F85E0>
+MEM.data_address: 0
+MEM.store_data: 12
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F44BAFA60>
+WB.store_data: 12
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 11
+
+IF.nop: False
+IF.PC: 12
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.ADDI object at 0x0000020F446D4400>
+EX.operand1: 12
+EX.operand2: 4
+EX.store_data: 0
+EX.destination_register: 2
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446F85E0>
+MEM.data_address: 0
+MEM.store_data: 12
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F44BAFA60>
+WB.store_data: 12
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 12
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: True
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F85E0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446D4400>
+MEM.data_address: 0
+MEM.store_data: 16
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F44BAFA60>
+WB.store_data: 12
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 13
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F85E0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446D4400>
+MEM.data_address: 0
+MEM.store_data: 16
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F455FAE80>
+WB.store_data: 16
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 14
+
+IF.nop: False
+IF.PC: 12
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.ADDI object at 0x0000020F455F1FA0>
+EX.operand1: 16
+EX.operand2: 4
+EX.store_data: 0
+EX.destination_register: 2
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F446D4400>
+MEM.data_address: 0
+MEM.store_data: 16
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F455FAE80>
+WB.store_data: 16
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 15
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: True
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F28B0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F455F1FA0>
+MEM.data_address: 0
+MEM.store_data: 20
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F455FAE80>
+WB.store_data: 16
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 16
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F28B0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F455F1FA0>
+MEM.data_address: 0
+MEM.store_data: 20
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F47127520>
+WB.store_data: 20
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 17
+
+IF.nop: False
+IF.PC: 12
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: False
+EX.instruction_ob: <instructions.ADDI object at 0x0000020F44706550>
+EX.operand1: 20
+EX.operand2: 4
+EX.store_data: 0
+EX.destination_register: 2
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: True
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F455F1FA0>
+MEM.data_address: 0
+MEM.store_data: 20
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F47127520>
+WB.store_data: 20
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 18
+
+IF.nop: False
+IF.PC: 4
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: True
+ID.instruction_bytes: 11111110000100010001111011100011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F85E0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: False
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F44706550>
+MEM.data_address: 0
+MEM.store_data: 24
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: True
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F47127520>
+WB.store_data: 20
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False
+----------------------------------------------------------------------
+State after executing cycle: 19
+
+IF.nop: False
+IF.PC: 8
+IF.instruction_count: 0
+IF.halt: False
+IF.instruction_countXXXXXX: 1
+
+ID.nop: False
+ID.instruction_bytes: 00000000010000010000000100010011
+ID.halt: False
+
+EX.nop: True
+EX.instruction_ob: <instructions.BNE object at 0x0000020F446F85E0>
+EX.operand1: 0
+EX.operand2: 0
+EX.store_data: 0
+EX.destination_register: 0
+EX.read_data_mem: False
+EX.write_data_mem: False
+EX.write_back_enable: False
+EX.halt: False
+
+MEM.nop: True
+MEM.instruction_ob: <instructions.ADDI object at 0x0000020F44706550>
+MEM.data_address: 0
+MEM.store_data: 24
+MEM.write_register_addr: 2
+MEM.read_data_mem: False
+MEM.write_data_mem: False
+MEM.write_back_enable: True
+MEM.halt: False
+
+WB.nop: False
+WB.instruction_ob: <instructions.ADDI object at 0x0000020F4EEF4940>
+WB.store_data: 24
+WB.write_register_addr: 2
+WB.write_back_enable: True
+WB.halt: False

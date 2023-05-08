@@ -1,0 +1,10 @@
+C:\Users\moink\Downloads\CSA\RV321_simulator\Phase - 2 Test Cases\TC0/
+Single Stage Core Performance Metrics------------------------------
+Number of cycles taken: 6
+Cycles per instruction: 1
+Instructions per cycle: 1
+C:\Users\moink\Downloads\CSA\RV321_simulator\Phase - 2 Test Cases\TC0/
+Five Stage Core Performance Metrics------------------------------
+Number of cycles taken: 10
+Cycles per instruction: 2.0
+Instructions per cycle: 0.5

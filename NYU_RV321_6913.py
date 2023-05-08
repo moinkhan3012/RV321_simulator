@@ -829,15 +829,17 @@ class Core:
         self.ext_dmem = dmem
 
     def calculate_performance_metrics(self, mode='w'):
-        if self.stage =='Single_Stage':
+        if self.stage =='SS':
             #cpi will be always 1 for Single Stage Core
             cpi =1
             ipc =1
+            type = 'Single Stage'
         else:
             cpi = round(float(self.cycle) / (len(self.ext_imem.IMem)/4),6)
             ipc = round(1 / cpi,6)
-
-        result_format = f"{'-'*15} Core Performance Metrics {'-'*15}\n" \
+            type = 'Five Stage'
+        result_format = f"{self.ioDir[:-3]}\n" \
+                        f"{type} Core Performance Metrics{'-'*30}\n" \
                         f"Number of cycles taken: {self.cycle}\n" \
                         f"Cycles per instruction: {cpi}\n" \
                         f"Instructions per cycle: {ipc}\n"
@@ -850,7 +852,7 @@ class SingleStageCore(Core):
     def __init__(self, ioDir, imem, dmem):
         super().__init__(ioDir + "/SS_", imem, dmem)
         self.opFilePath = ioDir + "/StateResult_SS.txt"
-        self.stages = "Single Stage"
+        self.stage = "SS"
 
 
     def step(self):
@@ -911,7 +913,7 @@ class FiveStageCore(Core):
     def __init__(self, ioDir, imem, dmem):
         super().__init__(ioDir + "/FS_", imem, dmem)
         self.opFilePath = ioDir + "/StateResult_FS.txt"
-        self.stages = "Five_Stage"
+        self.stage = "FS"
 
     def step(self):
         # Your implementation
