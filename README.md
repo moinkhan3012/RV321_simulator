@@ -1,4 +1,4 @@
-# Performance Modelling - RISC-V processor
+## Performance Modelling - RISC-V processor
 This GitHub repository contains the implementation of a performance model for a 32-bit RISC-V processor. The project provides cycle-accurate simulators of the processor, written in Python. The skeleton code for the assignment is provided in the files "NYU_RV32I_6913.py".
 
 The simulators take two input files: "imem.txt" and "dmem.txt". The "imem.txt" file initializes the instruction memory, and the "dmem.txt" file initializes the data memory of the processor. Both the instruction and data memory are byte addressable, and they are stored in "Big-Endian" format.
